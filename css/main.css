@@ -5,14 +5,41 @@
 @viewport { width: device-width; scale: 1; }
 
 html {
-    box-sizing: border-box;
-    
-    -moz-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    text-size-adjust: 100%;
+  box-sizing: border-box;
+
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+
+  background-color: #000;
+
+  font: normal 100%/1.5 sans-serif;
+  color: #fff;
 }
 
-*, *:before, *:after {
-    box-sizing: inherit;
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.clock-face {
+  background-image: url("../img/clock-face.svg");    
+  height: 300px;
+  width: 300px;
+    position: relative;
+}
+
+.hand {
+  width: 14px;
+    position: absolute;
+    left: calc(50% - 7px);
+    bottom:50%;
+        
+}
+
+.center {
+  width: 28px;
+    position: absolute;
+    left: calc(50% - 14px);
+    bottom: calc(50% - 14px);
 }
