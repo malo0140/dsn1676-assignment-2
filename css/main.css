@@ -33,8 +33,18 @@ html {
   width: 14px;
     position: absolute;
     left: calc(50% - 7px);
-    bottom:50%;
+    bottom: 50%;
+    transition: all 6s linear; 
+    transform-origin: bottom center;
         
+}
+
+.clock-face:target .hand-hour {
+    transform: rotate(360deg);
+}
+
+.clock-face:target .hand-minute {
+    transform: rotate(4320deg);
 }
 
 .center {
@@ -43,3 +53,33 @@ html {
     left: calc(50% - 14px);
     bottom: calc(50% - 14px);
 }
+
+.forward {
+    display: inline-block;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #fff;
+     background-color: lime;
+    line-height: 6em;
+    width: 6em;
+    text-align: center;
+    margin: 1em;
+}
+    
+.back {
+    display: inline-block;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #fff;
+     background-color: red;
+    line-height: 6em;
+    width: 6em;
+    text-align: center;  
+    margin: 1em;
+}
+
+.forward:hover {
+    background-color: white;   
+}
+    
+    
