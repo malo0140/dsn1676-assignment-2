@@ -78,8 +78,10 @@ html {
     margin: 1em;
 }
 
-.forward:hover {
-    background-color: white;   
+a:hover {
+    background-color: white;
+    color: black;
+    transition: all .50s linear;
 }
-    
+   
     
